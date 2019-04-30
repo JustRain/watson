@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.watson.iml" filepath="$PROJECT_DIR$/com.watson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watson-apitest/watson-apitest.iml" filepath="$PROJECT_DIR$/watson-apitest/watson-apitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watson-dbtest/watson-dbtest.iml" filepath="$PROJECT_DIR$/watson-dbtest/watson-dbtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/watson-uitest/watson-uitest.iml" filepath="$PROJECT_DIR$/watson-uitest/watson-uitest.iml" />
+    </modules>
+  </component>
+</project>

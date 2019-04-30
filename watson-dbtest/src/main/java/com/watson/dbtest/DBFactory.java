@@ -20,15 +20,15 @@ public class DBFactory {
         return DBGenerator.getInstance().getMysqlOperation(id);
     }
 
-    /**
-     * 创建操作Oracle数据库的对象
-     *
-     * @param id @Oracle 注解中的id值
-     * @return
-     */
-    public static OracleOperations createOracleTest(String id) {
-        return DBGenerator.getInstance().getOracleOperation(id);
-    }
+//    /**
+//     * 创建操作Oracle数据库的对象
+//     *
+//     * @param id @Oracle 注解中的id值
+//     * @return
+//     */
+//    public static OracleOperations createOracleTest(String id) {
+//        return DBGenerator.getInstance().getOracleOperation(id);
+//    }
 
     /**
      * 创建操作redis的对象

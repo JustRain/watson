@@ -25,7 +25,7 @@ import java.util.*;
 public class DBGenerator {
 
     private Map<String,MySqlOperations> mySqlOperationsMap =new HashMap<String,MySqlOperations>();
-    private Map<String,OracleOperations> oracleOperationsMap=new HashMap<String, OracleOperations>();
+//    private Map<String,OracleOperations> oracleOperationsMap=new HashMap<String, OracleOperations>();
     private Map<String,RedisOperations> redisOperationsMap=new HashMap<String, RedisOperations>();
     private Map<String,MongoOperations> mongoOperationsMap=new HashMap<String, MongoOperations>();
     private DBGenerator(){}
@@ -58,19 +58,19 @@ public class DBGenerator {
     }
 
 
-    public OracleOperations getOracleOperation(String id){
-        if(oracleOperationsMap.get(id)!=null){
-            return oracleOperationsMap.get(id);
-        }else {
-            Set<Class<?>> classesContainAnnotation = ClassPool.getClassesContainAnnotation(Oracle.class);
-            for(Class<?> clazz:classesContainAnnotation){
-                Oracle annotation = clazz.getAnnotation(Oracle.class);
-                OracleOperations oracleOperations = new OracleOperations(annotation.username(), annotation.password(), annotation.url());
-                oracleOperationsMap.put(annotation.id(),oracleOperations);
-            }
-        }
-        return oracleOperationsMap.get(id);
-    }
+//    public OracleOperations getOracleOperation(String id){
+//        if(oracleOperationsMap.get(id)!=null){
+//            return oracleOperationsMap.get(id);
+//        }else {
+//            Set<Class<?>> classesContainAnnotation = ClassPool.getClassesContainAnnotation(Oracle.class);
+//            for(Class<?> clazz:classesContainAnnotation){
+//                Oracle annotation = clazz.getAnnotation(Oracle.class);
+//                OracleOperations oracleOperations = new OracleOperations(annotation.username(), annotation.password(), annotation.url());
+//                oracleOperationsMap.put(annotation.id(),oracleOperations);
+//            }
+//        }
+//        return oracleOperationsMap.get(id);
+//    }
 
     public RedisOperations getRedisOperations(String id){
         if(redisOperationsMap.get(id)!=null){
