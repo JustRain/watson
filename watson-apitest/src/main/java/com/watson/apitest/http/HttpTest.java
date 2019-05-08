@@ -2,6 +2,8 @@ package com.watson.apitest.http;
 
 import jodd.http.HttpRequest;
 import jodd.http.HttpResponse;
+import jodd.http.ProxyInfo;
+import jodd.http.net.SocketHttpConnectionProvider;
 
 import java.util.Map;
 
@@ -64,6 +66,17 @@ public class HttpTest {
         HttpRequest httpRequest=HttpRequest.post(url);
         HttpResponse send = httpRequest.header(header).form(httpParams).send();
         return send;
+    }
+
+    public HttpResponse doGetProxy(String url,String proxyIp,int proxyPort){
+        ProxyInfo proxyInfo = new ProxyInfo(ProxyInfo.ProxyType.HTTP,proxyIp,proxyPort,"","");
+        SocketHttpConnectionProvider provider = new SocketHttpConnectionProvider();
+        provider.useProxy(proxyInfo);
+        HttpRequest request = HttpRequest.get(url);
+        request.method("GET");
+        request.charset("UTF-8");
+        HttpResponse response = request.open(provider).send();
+        return response;
     }
 
 
