@@ -3,7 +3,7 @@ package com.watson.dbtest.db;
 import com.watson.dbtest.annotation.Redis;
 
 /**
- * @author guochang.xie
+ * @author chong.xu
  * @Description: TODO
  * @date 2019/4/235:52 PM
  */

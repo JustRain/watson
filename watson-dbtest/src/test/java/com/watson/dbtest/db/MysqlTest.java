@@ -3,7 +3,7 @@ package com.watson.dbtest.db;
 import com.watson.dbtest.annotation.Mysql;
 
 /**
- * @author guochang.xie
+ * @author chong.xu
  * @Description: TODO
  * @date 2019/4/237:26 PM
  */

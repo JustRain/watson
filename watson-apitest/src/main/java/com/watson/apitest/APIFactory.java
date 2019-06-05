@@ -7,7 +7,7 @@ import com.watson.apitest.socket.SocketTest;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author guochang.xie
+ * @author chong.xu
  * @Description: TODO
  * @date 2019/4/115:46 PM
  */

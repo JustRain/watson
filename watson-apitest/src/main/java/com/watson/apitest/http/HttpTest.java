@@ -8,7 +8,7 @@ import jodd.http.net.SocketHttpConnectionProvider;
 import java.util.Map;
 
 /**
- * @author guochang.xie
+ * @author chong.xu
  * @Description: TODO
  * @date 2019/4/155:47 PM
  */

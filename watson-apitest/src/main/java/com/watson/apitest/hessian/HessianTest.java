@@ -5,7 +5,7 @@ import com.caucho.hessian.client.HessianProxyFactory;
 import java.net.MalformedURLException;
 
 /**
- * @author guochang.xie
+ * @author chong.xu
  * @Description: TODO
  * @date 2019/4/1610:25 AM
  */

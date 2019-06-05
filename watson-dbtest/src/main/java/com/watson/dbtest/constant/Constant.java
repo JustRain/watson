@@ -1,7 +1,7 @@
 package com.watson.dbtest.constant;
 
 /**
- * @author guochang.xie
+ * @author chong.xu
  * @Description: TODO
  * @date 2019/4/235:28 PM
  */
