@@ -1,7 +1,6 @@
 package com.watson.apitest;
 
 import com.watson.apitest.dubbo.DubboTest;
-import com.watson.apitest.hessian.HessianTest;
 import com.watson.apitest.http.HttpTest;
 import com.watson.apitest.socket.SocketTest;
 import lombok.extern.slf4j.Slf4j;
@@ -46,7 +45,4 @@ public class APIFactory {
         return new SocketTest(address,port);
     }
 
-    public  static <T> T createHessianTest (Class<T> clazz,String url){
-       return (T)HessianTest.getInstance().handler(clazz,url);
-    }
 }
