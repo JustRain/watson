@@ -7,7 +7,7 @@
     <groupId>watson</groupId>
     <artifactId>com.watson</artifactId>
     <packaging>pom</packaging>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <modules>
         <module>watson-uitest</module>
         <module>watson-dbtest</module>
